@@ -620,7 +620,7 @@ You can associate javascript to your quiz, which controls how to deal with the i
 > [LiaScript-documentation](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#60).
 
 
-### Formulas
+### Formulas2
 
 LiaScript uses [KaTeX](https://katex.org) to generate formulas.
 To define a formula environment, the Latex formulas have to be surrounded by `$` signs.
