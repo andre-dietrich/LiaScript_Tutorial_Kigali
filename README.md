@@ -32,6 +32,7 @@ comment:  Full day workshop at eLearning Africa 2022.
 > * Fuzzy Search: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
 > * Save: <kbd>Shift</kbd> + <kbd>S</kbd>
 > * Move lines: <kbd>Alt</kbd> + <kbd>ᐃ/ᐁ</kbd>
+> * Open the LiaScript Preview: Alt+L
 > * __LiaScript__:
 >
 >   - Snippets: <kbd>l</kbd> <kbd>i</kbd> <kbd>a</kbd>
@@ -80,7 +81,9 @@ comment:  Full day workshop at eLearning Africa 2022.
 > -- by [John Gruber](https://daringfireball.net/projects/markdown/syntax#philosophy)
 
 
-Headers
+### Headers
+
+
 
 By now you should have noticed, that # (hash-tags) are used to structure your content.
 The number of # defines the header-type and indentation.
@@ -96,6 +99,10 @@ Try to add hash-tags in front of the header and experiment with it.
 A paragraph and other markdown-blocks, that we will get to know, are separated visually from each other by empty lines.
 These lines are thus interpreted as one single paragraph.
 
+This is another paragraph.
+
+This is my third paragraph.
+
 ---
 
 Task:
@@ -107,7 +114,10 @@ Add two more paragraphs and try out, if the number of empty lines in between has
 Bullet points in an unordered list indicated by starting *, -, or + and require indentation:
 
 * A list always starts with the first bullet point
-* A bullet point can consist of multiple parts.
+- another point
+  test 1on.
+  another line
+- A bullet point can consist of multiple parts.
 
   The only thing you will have to keep in mind is the correct indentation.
 
@@ -115,6 +125,9 @@ Bullet points in an unordered list indicated by starting *, -, or + and require 
 
   + These do not necessarily have to start with an asterisks
   + But it is good practice if you use different symbols for different nesting
+  + It should be simple
+
+* Finally this is the end
 
 ------------------------
 
@@ -127,9 +140,18 @@ Add some more bullet points the list, where you write down some comments your ex
 Markdown has also support for numbered lists, which can be used in combination with "unordered" lists.
 
 
-1. First
+3. First
 2. Second
-3. ...
+1. ...
+
+   + These do not necessarily have to start with an asterisks
+   + But it is good practice if you use different symbols for different nesting
+   + It should be simple
+
+content 
+
+0. like this
+-1. testing this one 
 
 Task:
 
@@ -143,29 +165,32 @@ But, you can use different elements to tag your content.
 
 * `code`: this type is required if you want to highlight elements as code, the markdown interpreter will leave everything as it is (including Markdown syntax)
 
-* italic: surround the word or the text with either `*` or  `_`.
+* _italic_: surround *the word or the text with* either `*` or  `_`.
 
-* bold: think of two times as important as italic, thus it is surround by two `**` or `__`.
+* __bold__: **think** of two times as important as italic, thus it is surround by two `**` or `__`.
 
-* bold and italic: how would you now try to define this and try out some nested combinations.
+* ___bold and italic___: how would you now try to define this and try out some nested combinations.
 
 * Task: If you are using WhatsApp, you could write some messages with this formatting.
   WhatsApp has support for some pieces of markdown-syntax.
 
-* crossed out: if you use `~` similarly to bold and italic, you will get a similar effect.
+* ~cro___ssed___ out~: if you use `~` similarly to bold and italic, you will get a similar effect.
 
-* underlined: ???
+* ~~underlined~~: ???
 
-* crossed out and underlined: follow the markdown idea ;-)
+* ~~~crossed out and underlined~~~: follow the markdown idea ;-)
 
-* superscript: it is not Markdown but LiaScript, but you can use `^` to surround superscript elements
+* ^superscript^: it is not Markdown but LiaScript, but you can use `^` to surround superscript elements
 
 ### Block-quotes
 
 > If you want to highlight an entire text as important, then add a `> ` to the the beginning of every line.
 > Early emails were an inspiration for this notation.
 >
-> **Within the following parts, we will use this syntax to mark tasks**
+> > **Within the following parts, we will use this syntax to mark tasks**
+>
+> * bullet point 1
+> * bullet 2
 
 ---
 
