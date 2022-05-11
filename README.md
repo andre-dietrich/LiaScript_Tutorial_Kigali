@@ -184,10 +184,12 @@ But, you can use different elements to tag your content.
 
 ### Block-quotes
 
-> If you want to highlight an entire text as important, then add a `> ` to the the beginning of every line.
+> If you want to highlight an entire text as important,
+> then add a `> ` to the the beginning of every line.
 > Early emails were an inspiration for this notation.
 >
-> > **Within the following parts, we will use this syntax to mark tasks**
+> > **Within the following parts, we will use this syntax**
+> > this belongs to it.
 >
 > * bullet point 1
 > * bullet 2
@@ -200,7 +202,9 @@ Question: Can blockquotes be nested?
 
 Nothing within the Internet works without links. You can use them everywhere within the document, but Markdown has also support for named and internal links.
 
-https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#1
+This is a pragraph [Go to Google](https://google.de) this is. 
+
+**[LiaScript Course](https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#1)**
 
 The syntax for named links is: `[name](url)`
 
@@ -216,6 +220,8 @@ Internal links follow a similar pattern, but instead of URLs you will have to re
 
 > **Task:** Create an internal link to the (Numbered lists) section.
 
+[**Numbered list section**](#numbered-lists)
+
 #### Images
 
 Images are a special case of links, which you want to embed into your document and not only reference. Thus, these are important links, which are highlighted by a starting `!`.
@@ -227,22 +233,31 @@ Images are a special case of links, which you want to embed into your document a
 >
 > __Every part is important__
 
-[Markdown logo](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
+![Markdown logo](https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg)
+
+![The Death of Leonardo da Vinci](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Francois_Ier_Leonard_de_Vinci-Jean_Auguste_Dominique_Ingres.jpg/1276px-Francois_Ier_Leonard_de_Vinci-Jean_Auguste_Dominique_Ingres.jpg "The Death of Leonardo da Vinci, by Ingres, 1818")
 
 > The name of link can also be an image, try add a link with the markdown-logo that references section "Markdown?"
 
-[Name](#markdown?)
+![Nokia image](/images/nokia.jpeg)
 
 ### Code and HTML
 
 Of course you can use any kind of HTML that runs natively within your browser with any kind of styling as depicted.
+
+``` markdown
+## title
+
+paragraph
+
+### subtitle
 
 <h2 style="color: green;
 font-size: 40px;
 border: 4px dotted pink">
 LiaScript-ruleZ
 </h2>
-
+```
 
 But, if you want to add code with syntax-Highlighting, you have surround it with a block of 3 backticks \`.
 After the first backtick you can specify the language you use.
@@ -258,7 +273,7 @@ After the first backtick you can specify the language you use.
 
 <summary>**Honest Textbook ads (click to enlarge)**</summary>
 
-https://www.youtube.com/watch?v=lhSjYT7pWkw
+!?[youtube](https://www.youtube.com/watch?v=lhSjYT7pWkw)
 
 </details>
 
@@ -280,10 +295,11 @@ https://www.youtube.com/watch?v=lhSjYT7pWkw
 How would you write down a table with only a typewriter?
 Probably similar to the way as it is done here.
 
-| Head 1 | Head 2 | Head 3 |
-|:------ |:------:| ------:|
-| Item 1 | Item 2 | Item 3 |
-| ...    |  ...   |    ... |
+| Head 1 | Head 2 | Head 3 | Another Heading |
+|:------ |:------:| ------:| ----- |
+| Item 1 | Item 2 | Item 3 | 222a |
+| ...    |  ...   |    ... | 222a |
+
 
 * Cells are separated by horizontal `|`
 * The first line is the table head
@@ -294,6 +310,8 @@ Probably similar to the way as it is done here.
   - centered: `:---:`
 
 > **Task:** Add additional lines to the table and change the column orientation
+
+
 ## LiaScript?
 
 Markdown is used for creating static content and blogging. With LiaScript we tried to extend the visual metaphors and extend the language in various ways.
@@ -358,17 +376,19 @@ From links to ! images --> ? audio --> !? video --> ?? anything else:
 
 > Task1: Embed the links below as audio content
 
-[singing birds](https://bigsoundbank.com/UPLOAD/mp3/1068.mp3)
+?[singing birds](https://bigsoundbank.com/UPLOAD/mp3/1068.mp3)
 
-[soundcloud](https://soundcloud.com/glennmorrison/beethoven-moonlight-sonata)
+?[soundcloud](https://soundcloud.com/glennmorrison/beethoven-moonlight-sonata)
 
 > Task2: Go to youtube and add some video content
 
+!?[Youtube link](https://www.youtube.com/watch?v=9EtrrQ2XBTQ)
+
 > Task3: Embed the content of the link below into your course
 
-[A circuit simulator](https://www.falstad.com/circuit/circuitjs.html)
+??[A circuit simulator](https://www.falstad.com/circuit/circuitjs.html)
 
-[Piggy Bank](https://sketchfab.com/3d-models/198016-piggy-bank-14bfd106baf14d62aebf6eafbe25b3c3 "Piggy Bank. 14th-15th Century. Java, Majapahit Dynasty. Terracotta. Overall: 24.2 cm (9 1/2 in.). John L. Severance Fund, 1980.16")
+??[Piggy Bank](https://sketchfab.com/3d-models/198016-piggy-bank-14bfd106baf14d62aebf6eafbe25b3c3 "Piggy Bank. 14th-15th Century. Java, Majapahit Dynasty. Terracotta. Overall: 24.2 cm (9 1/2 in.). John L. Severance Fund, 1980.16")
 
 > Task4: experiment with other websites of your choice and try to add some more captions to your elements.
 
@@ -403,13 +423,17 @@ Simply add these points the the beginning of your block.
 
 > **Task:** Add some animations to the content below.
 
+   {{1}}
 Let me appear at first.
 And disappear at step 2.
 
+
+    {{2-3}}
 | let    | me        |
 | :----- | :-------- |
 | appear | at step 2 |
 
+   {{3}}
 > As the the last and final quote.
 > I wanted to be displayed at the very end.
 
@@ -417,8 +441,8 @@ And disappear at step 2.
 
 You can also "inline" animations, simply by unpacking the curly braces:
 
-* fade-in: `{2}{TADA}`
-* fade-in and out: `{1-3}{a __small__-note}`
+* fade-in: {2}{TADA}
+* fade-in and out: {1-3}{a __small__-note} 
 
 > **Task:** Try to add a table, where the table content will appear step-wise.
 > Check the different presentations in Textbook mode.
@@ -441,9 +465,21 @@ With this notation `--{{1}}--` you can add some more explanation that will be sp
 > 
 > Try to add some examples of your mother tongue.
 
+
+      --{{1}}--
 The entire ***Markdown*** paragraph right below the effect definition in double minus notation is sent to responsivevoice to speak the text out loud. If you click on the ear button at the navigation panel, then this paragraph gets rendered at the place where it is defined.
 
+      --{{2 Deutsch Female}}--
 Der Ganze Satz sollte deutsch ausgesprochen werden!
+
+
+{{1}}
+blabbabal
+
+{{2}}
+| Header     |
+| :--------- |
+| Item       |
 
 #### Task
 
@@ -463,7 +499,7 @@ A text input is simply a filed that follows after your question.
 The solution is placed within a stylized input field.
 In LiaScript quizzes are always associated with double brackets.
 
-    `[[Solution]]`
+    [[LiaScript]]
 
 > **Task:** Remove the backtics, change the solution and add your questions.
 
@@ -474,10 +510,19 @@ If you want to create a single choice quiz, for which commonly radio-buttons are
     [( )] No
     [(X)] <-- **YES of course**
     [( )] I would use H5P
+    [( )] ....
 
 > **Task:** Add some more options and try out, what happens, when multiple `X` are used.
 
 #### Multiple Choice
+
+If we stick to this metaphor, checkboxes can be defined with the following syntax:
+
+    [[X]] <-- right
+    [[ ]] wrong
+    [[ ]] <-- right
+    [[X]] wrong
+
 
 If we stick to this metaphor, checkboxes can be defined with the following syntax:
 
@@ -775,8 +820,8 @@ In most cases the first column represents the x-values or in this case the main 
 | Mouse           |     0.028 kg |              2 |      95 |
 | Flying squirrel |     0.085 kg |             15 |      50 |
 | Brown bat       |     0.020 kg |             30 |      10 |
-| Sheep           |        90 kg |             12 |      95 |
-| Human           |        68 kg |             70 |      10 |
+| Sheep           |        0.90 kg |             12 |      95 |
+| Human           |        0.68 kg |             70 |      10 |
 
 > **Task:** Sort the columns and inspect the resulting presentation.
 >
